@@ -1,0 +1,197 @@
+/* Estilo geral */ 
+body { 
+    background-color: #f8f9fa; 
+    font-family: Arial, sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+/* Estilizando o contêiner principal do jogo */ 
+.container { 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    padding: 30px; 
+    max-width: 600px; 
+    width: 90%; 
+    margin: 20px auto;
+    box-sizing: border-box;
+}   
+
+/* Estilizando a dica */ 
+#dica {
+    color: #6c757d; 
+    margin-bottom: 20px; 
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+}
+
+/* Estilizando a palavra a ser adivinhada */ 
+#palavra {
+    color: #343a40; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    margin-bottom: 20px; 
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+}
+
+/* Estilizando o campo de entrada */ 
+#guess { 
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+    border: 2px solid #ced4da; /* Adiciona borda ao campo */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Alinhando e centralizando os botões */ 
+.botões { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+
+/* Estilizando os botões */ 
+.btn { 
+    padding: 12px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    border: none; 
+    cursor: pointer;
+    text-align: center; 
+    flex: 1 1 150px; 
+    max-width: 200px; 
+    transition: background-color 0.3s, transform 0.2s; /* Adiciona transição suave */
+}
+
+.btn-primary { 
+    background-color: #800501; 
+    color: white; 
+}
+
+.btn-primary:hover { 
+    background-color: #a10a0a; /* Cor mais clara ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+.btn-secondary { 
+    background-color: #6c757d; 
+    color: white; 
+}
+
+.btn-secondary:hover { 
+    background-color: #5a6268; 
+}
+
+/* Espaçamento para o status e letras tentadas */ 
+#status, 
+#attempts { 
+    font-size: 1rem; 
+    color: #495057;
+    margin-top: 20px; 
+}
+
+/* Estilizando a área da forca */ 
+#forca {
+    width: 150px; 
+    height: 250px; 
+    margin: 20px auto; 
+    position: relative; 
+}
+
+#forca div {
+    background-color: rgb(155, 14, 4); 
+    position: absolute; 
+}
+
+/* Estilizando o rodapé (footer) */ 
+footer {
+    background-color: #800501; 
+    color: #fff; 
+    padding: 15px 0; 
+    font-size: 18px; 
+    text-align: center; 
+    margin-top: auto; 
+    line-height: 1.6; 
+    width: 100%;
+}
+
+/* Estilizando o cabeçalho (header) */ 
+header { 
+    background-color: #800501; 
+    color: #fff; 
+    padding: 15px 0; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+/* Ajustando a imagem do logo no cabeçalho */
+img.senai-logo {
+    max-width: 20%;
+    height: auto;
+}
+
+/* Media queries para telas menores */ 
+@media (max-width: 768px) { 
+    .container {
+        width: 90%; 
+        padding: 15px;
+    }
+
+    .btn { 
+        flex: 1 1 100%; /* Botões ocupam a largura disponivel */
+        max-width: none; /* Remove a largura máxima */
+        margin-bottom: 10px; /* Espaçamento inferior entre botões empilhados */
+    }
+
+    #forca { 
+        width: 120px; 
+        height: 200px; 
+    }
+
+    footer, 
+    header { 
+        padding: 10px 0; 
+        font-size: 16px; 
+    }
+
+    img.senai.logo { 
+        max-width: 30%; 
+    }
+
+    .display-4 { 
+        font-size: 2rem; /* Ajuste para tablets e dispositivos itermediarios */ 
+    }
+}
+
+@media (max-width: 400px) { 
+    .container { 
+        width: 95%; 
+        padding: 10px; 
+    }
+    #forca { 
+        width: 100px; 
+        height: 180px; 
+    }
+
+    .btn { 
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+
+    footer, 
+    header { 
+        font-size: 14px; 
+    }
+
+    im.senai-logo { 
+        max-width: 40%; 
+    }
+    .display-4 { 
+        font-size: 1.5rem; /* Ajuste para dispositivos móveis */ 
+    }
+}

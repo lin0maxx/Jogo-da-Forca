@@ -1,0 +1,76 @@
+/* Static/css/style.css */
+
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f2f2f2; 
+}
+
+img.bolsas-logo {
+    max-width: 70%;  /* Define a largura da imagem */ 
+    margin-top: 20px; /* Espaço acima da imagem */
+}
+
+header {
+    background-color: #800501; 
+    color: #fff; 
+    padding: 20px 0; /* Aumenta o padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+h1 {
+    color: #800501; /* Cor do título */
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    margin-top: 30px; /* Espaço acima do título */
+}
+
+h2 {
+    color: #800501; 
+    font-size: 2rem; /* Tamanho do subtítulo */
+    margin-top: 20px; /* Espaço acima do subtítulo */
+}
+
+h3 {
+    color: #333; 
+    font-size: 1.5rem; /* Tamanho do título da seção */
+    margin-top: 15px; /* Espaço acima do título da seção */
+}
+
+p { 
+    font-size: 18px; 
+    margin: 15px auto; /* Margem automática para centralizar */
+    line-height: 1.6; 
+    max-width: 600px; /* Limita a largura dos parágrafos */
+}
+
+.btn-play { 
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #800501; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    margin-bottom: 30px; 
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte do botão */
+}
+
+.btn-play:hover {
+    background-color: #a10a0a; /* Cor mais clara ao passar o mouse */
+}
+
+footer {
+    background-color: #800501; 
+    color: #fff; 
+    padding: 15px 0; 
+    position: relative; /* Para posicionamento */
+    bottom: 0; /* Mantém o rodapé na parte inferior */
+    width: 100%; /* Largura total do rodapé */
+}
+
+footer p {
+    margin: 0; /* Remove margens do parágrafo do rodapé */
+    font-size: 16px; /* Tamanho da fonte do rodapé */
+}
